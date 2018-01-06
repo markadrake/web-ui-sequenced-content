@@ -1,0 +1,134 @@
+/*
+	SASS Variables
+*/
+$color-gray: #8E8E8E;
+$color-blue: #3482E6;
+
+/*
+	Sets example behavior.
+*/
+html {
+	width: 100%;
+	height: 100%;
+	font: normal 13px/18px "Open Sans", Helvetica, Arial, sans-serif;
+
+	body {
+		margin: 0;
+	}
+}
+
+/*
+	Dual Layer Slider
+*/
+.dual-layer-slider {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.sequenced {
+			> section {
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-position: center center;
+			}
+		}
+	}
+
+	.fg {
+		position: absolute;
+		width: 400px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		padding: 2rem;
+
+		.sequenced {
+			max-height: 400px;
+			overflow-y: auto;
+
+			> section {
+				width: 100%;
+			}
+		}
+	}
+
+	.pagination {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		.page {
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			width: 44px;
+			height: 44px;
+
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 14px;
+				right: 14px;
+				bottom: 14px;
+				left: 14px;
+				border-radius: 50%;
+				background: $color-gray;
+			}
+
+			&.-active,
+			&:focus {
+				&:before {
+					background: $color-blue;
+				}
+			}
+		}
+
+		.next {
+
+		}
+	}
+
+	/*
+		Typography
+		- This would most likely be defined globally, in another file.
+	*/
+	.tagline {
+		font: 300 37px/45px "Open Sans",sans-serif;
+	}
+
+	.title {
+		font: 400 21px/24px "Open Sans",sans-serif;
+		color: #292636;
+		font-size: 32px;
+		font-weight: 300;
+		letter-spacing: -.02em;
+		line-height: 1.3em;
+		margin: 0 0 20px 0;
+		margin-bottom: 20px;
+		padding: 0 15px 18px 15px;
+	}
+
+	hr {
+		border: none;
+		height: 1px;
+		background: #d4dff6;
+	}
+
+	p {
+		color: #87818C;
+		font-size: 16px;
+		letter-spacing: -.02em;
+		line-height: 1.6em;
+		padding: 0 15px;
+	}
+}
