@@ -1,0 +1,174 @@
+@import "config"; // configurable settings
+@import "document"; // <html> and <body>
+@import "typography"; // `.title`, `.tagline`, and <p>
+
+/*
+	Dual Layer Slider Component
+*/
+.dual-layer-slider {
+	position: relative;
+
+	/*
+		Focus
+		- Helper for us to hide the overflow.
+		- Acts as a window to see the appropriate "scene" in our sequence.
+	*/
+	.focus {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	/*
+		Sequenced
+		- Acts as our staging area for "scenes".
+		- "Scenes" are the immediate children & should us the <section> tag.
+	*/
+	.sequenced {
+		font-size: 0;
+		white-space: nowrap;
+		transition: all ease-out 0.655s;
+
+		> section {
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			white-space: normal;
+		}
+	}
+
+	/*
+		Background
+		- Always set the background image to `cover`.
+	*/
+	.bg {
+		section {
+			height: 100%;
+			background-size: cover;
+			background-position: center center;
+		}
+	}
+
+	/*
+		Foreground
+		- Add padding to avoid run-in with the viewport.
+	*/
+	.fg {
+		padding: 2rem;
+		box-sizing: border-box;
+	}
+
+	/*
+		Pagination
+		- Style page indicators.
+		- Style the next indicator.
+	*/
+	.pagination {
+		font-size: 0;
+
+		a {
+			position: relative;
+			display: inline-block;
+			width: 44px;
+			height: 44px;
+			box-sizing: border-box;
+			vertical-align: top;
+		}
+
+		.page {
+
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 14px;
+				right: 14px;
+				bottom: 14px;
+				left: 14px;
+				border-radius: 50%;
+				background: $color-gray;
+			}
+
+			&.-active,
+			&:focus {
+				&:before {
+					background: $color-blue;
+				}
+			}
+		}
+
+		.next {
+			padding: 8px;
+			background: $color-blue;
+			color: #fff;
+			margin-left: 14px;
+
+			svg {
+				width: 100%;
+				height: auto;
+				stroke: currentColor;
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	/*
+		UI Design
+		- For screens between 0 to 799px wide.
+	*/
+	@media screen and (max-width: 799px) {
+		// Background
+		.bg {
+			height: 240px;
+		}
+
+		// Pagination
+		.pagination {
+			.next {
+				margin-right: -2rem;
+				float: right;
+			}
+		}
+	}
+
+	/*
+		UI Design
+		- For screens greater than 800px wide.
+	*/
+	@media screen and (min-width: 800px) {
+		height: 700px;
+		overflow: hidden;
+
+		// Background
+		.bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		// Foreground
+		.fg {
+			position: absolute;
+			width: 400px;
+			left: 25%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background: #fff;
+			box-shadow: 3px 4px 15px -6px #000;
+
+			.sequenced {
+				> section {
+					max-height: 400px;
+					overflow-y: auto;
+				}
+			}
+		}
+
+		// Pagination
+		.pagination {
+			margin-right: -2rem;
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+/*
+	For this demo we will make sure the full screen width
+	and height are available, and remove margins.
+*/
+html {
+    width: 100%;
+    height: 100%;
+    body {
+        margin: 0;
+    }
+}

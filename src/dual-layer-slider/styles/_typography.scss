@@ -1,0 +1,47 @@
+/*
+	Typography Styles
+	- Set base font style on <html>
+	- Reset <h1> - <h6>
+	- Define font styles: title, tagline
+	- Define font tags: <p>
+*/
+html {
+	font: normal 13px/18px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1rem;
+	line-height: 1rem;
+	font-weight: normal;
+	margin: 1rem;
+}
+
+.tagline {
+	margin: 0;
+	font: 500 20px/45px "Open Sans", sans-serif;
+	color: $color-blue;
+}
+
+.title {
+    font: 400 21px/24px "Open Sans", sans-serif;
+    color: #292636;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -.02em;
+    line-height: 1.3em;
+	margin: 0 0 20px 0;
+	padding: 0 0 18px 0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #d4dff6;
+}
+
+p {
+    color: #87818C;
+    font-size: 16px;
+    letter-spacing: -.02em;
+    line-height: 1.6em;
+}
