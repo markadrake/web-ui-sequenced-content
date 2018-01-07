@@ -17,7 +17,7 @@ _Sequenced content_ is synonymous with terms like slider, carousel, or paginatio
 
 ## License
 
-It's all frontend code. Take it. Improve upon it. Trash it. Do what you like! [Read the license](LICENSE).
+It's all front-end code. Take it. Improve upon it. Trash it. Do what you like! [Read the license](LICENSE).
 
 # About the Author
 

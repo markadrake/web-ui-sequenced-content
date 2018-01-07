@@ -2,7 +2,7 @@
 
 ## Prototype
 
-[View the prtototype on GitHub Pages](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html).
+[View the prototype on GitHub Pages](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html).
 
 ## Visual Example
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bktcZFpFFp4/0.jpg)](https://www.youtube.com/watch?v=bktcZFpFFp4)
@@ -39,11 +39,11 @@ Just a quick note about my typography styling:
 
 Here are some final thoughts from me about the **Dual Layer Slider**:
 
-- I prefer to use `<img>` tags over backgrounds when possible, but especially when the image really adds to the content around it. Think about an ecommerce store showing product information, or helpful instructions, etc. It's nice to have this cataloged by search engines, and we can now give the image some `alt` text. Wins all around!
+- I prefer to use `<img>` tags over backgrounds when possible, but especially when the image really adds to the content around it. Think about an e-commerce store showing product information, or helpful instructions, etc. It's nice to have this cataloged by search engines, and we can now give the image some `alt` text. Wins all around!
 
   - [`Object-Fit` has pretty good support in current generation browsers](https://caniuse.com/#feat=object-fit). There are polyfills and fallbacks available for older browsers that should help you to move away from this background-based solution.
 
-  - Consider using the `<picture>` element, or the `srcset` & `sizes` attributes to (1) take advantage of new file formats that have better compression, and (2) excercise control over how small or large the requested image is, and lastly (3) apply some art direction in response to the viewport. [Read more about responsive images on MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
+  - Consider using the `<picture>` element, or the `srcset` & `sizes` attributes to (1) take advantage of new file formats that have better compression, and (2) exercise control over how small or large the requested image is, and lastly (3) apply some art direction in response to the viewport. [Read more about responsive images on MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images).
 
 - Explore accessibility of this UI element more in depth. Apply the appropriate `aria` attributes.
 
