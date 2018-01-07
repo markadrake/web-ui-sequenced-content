@@ -71,6 +71,8 @@ class DualLayerSlider {
 
 		[].map.call(this.pages, (page, index) => {
 			page.addEventListener("click", (e) => {
+				e.preventDefault();
+				e.stopPropagation();
 				this.activeIndex = index;
 				this.log(`moving to index ${this.activeIndex}`);
 				this.move();
@@ -86,7 +88,9 @@ class DualLayerSlider {
 		this.log(`handleNext() called`);
 
 		this.next.addEventListener("click", (e) => {
-			this.activeIndex++;
+			e.preventDefault();
+			e.stopPropagation();
+		this.activeIndex++;
 			if (this.activeIndex == this.pages.length) this.activeIndex = 0;
 			this.log(`moving to index ${this.activeIndex}`);
 			this.move();
