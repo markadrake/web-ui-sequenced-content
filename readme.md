@@ -26,3 +26,5 @@ Hi I'm **Mark Drake**!
 I believe front-end is fun and I'm here to convince you of it too! Front-end is a dynamic field and thus very rewarding. The skills you learn are in high-demand, and mastery provides a solid foundation for you to transition to more rewarding roles.
 
 I'm currently a Senior Front-End Engineer for [The Scylla Group](https://www.scyllagroup.com). You can find me on in a couple of other places: [My Blog](https://markadrake.com), [Twitter](https://twitter.com/drakecode), and [LinkedIn](https://www.linkedin.com/in/markadrake/).
+
+<a href="https://www.patreon.com/bePatron?u=9173582"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" alt="Become a Patreon" height="44" /></a>
