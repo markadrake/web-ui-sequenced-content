@@ -2,11 +2,11 @@
 
 _Sequenced content_ is synonymous with terms like slider, carousel, or pagination. There are many techniques and solutions for displaying content in this manner - so why not create a repo with examples?
 
-> I appreciate constructive feedback so [please open an issue](issues).
+> I appreciate constructive feedback so [please open an issue](https://github.com/markadrake/web-ui-sequenced-content/issues).
 
 ## Quicklinks:
 
-1. Dual Layer Slider - [Code](dual-layer-slider) | [Prototype](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html)
+1. Dual Layer Slider - [Code](https://github.com/markadrake/web-ui-sequenced-content/tree/master/src/dual-layer-slider) | [Prototype](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html)
 
 ## Focus of This Project
 
