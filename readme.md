@@ -1,0 +1,28 @@
+# Web UI: Sequenced Content
+
+_Sequenced content_ is synonymous with terms like slider, carousel, or pagination. There are many techniques and solutions for displaying content in this manner - so why not create a repo with examples?
+
+> I appreciate constructive feedback so [please open an issue](issues).
+
+## Quicklinks:
+
+1. Dual Layer Slider - [Code](dual-layer-slider) | [Prototype](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html)
+
+## Focus of This Project
+
+1. Identify UI patterns around sequenced / sequential content display.
+2. Provide a working prototype of the pattern.
+3. Prototypes are coded in standard HTML, CSS, and JavaScript. We aren't going to bring in any front end frameworks or libraries.
+4. Prototypes are provided as "best effort" solutions. The goal is to provide inspiration and provide a foundation to build upon, not production ready and battle-tested code.
+
+## License
+
+It's all frontend code. Take it. Improve upon it. Trash it. Do what you like! [Read the license](LICENSE).
+
+# About the Author
+
+Hi I'm **Mark Drake**!
+
+I believe front-end is fun and I'm here to convince you of it too! Front-end is a dynamic field and thus very rewarding. The skills you learn are in high-demand, and mastery provides a solid foundation for you to transition to more rewarding roles.
+
+I'm currently a Senior Front-End Engineer for [The Scylla Group](https://www.scyllagroup.com). You can find me on in a couple of other places: [My Blog](https://markadrake.com), [Twitter](https://twitter.com/drakecode), and [LinkedIn](https://www.linkedin.com/in/markadrake/).
