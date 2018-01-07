@@ -1,5 +1,9 @@
 # Dual Layer Slider
 
+## Prototype
+
+[View the prtototype on GitHub Pages](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html).
+
 ## Visual Example
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bktcZFpFFp4/0.jpg)](https://www.youtube.com/watch?v=bktcZFpFFp4)
 
