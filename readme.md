@@ -7,6 +7,7 @@ _Sequenced content_ is synonymous with terms like slider, carousel, or paginatio
 ## Quicklinks:
 
 1. Dual Layer Slider - [Code](https://github.com/markadrake/web-ui-sequenced-content/tree/master/src/dual-layer-slider) | [Prototype](https://markadrake.github.io/web-ui-sequenced-content/src/dual-layer-slider/dual-layer-slider.html)
+2. Dynamic Text - [Code](https://github.com/markadrake/web-ui-sequenced-content/tree/master/src/dynamic-type) | [Prototype](https://markadrake.github.io/web-ui-sequenced-content/src/dynamic-type/dynamic-type.html)
 
 ## Focus of This Project
 

@@ -1,0 +1,15 @@
+/*
+	Repaintless.css
+	- Want to thank GitHub user (szynszyliszys) for her work on this repo.
+	Repo: https://github.com/szynszyliszys/repaintless
+	This code: https://github.com/szynszyliszys/repaintless/blob/master/repaintless-scss/animations/_pulsate.scss
+*/
+@keyframes pulsate {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

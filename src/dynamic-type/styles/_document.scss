@@ -1,0 +1,14 @@
+/*
+	For this demo we will make sure the full screen width
+	and height are available, and remove margins.
+*/
+html {
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 16px; // 1rem
+
+	body {
+		background: #e0e0e0;
+		color: #333;
+	}
+}
