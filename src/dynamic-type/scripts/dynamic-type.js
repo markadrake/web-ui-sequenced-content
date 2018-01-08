@@ -55,11 +55,6 @@ var DynamicType = function () {
 		key: "loop",
 		value: function loop() {
 			this.log("loop() called");
-
-			// window.setTimeout(() => {
-			// 	this.loop();
-			// }, this.config.timeForPause);
-
 			this.deleteText();
 		}
 	}, {

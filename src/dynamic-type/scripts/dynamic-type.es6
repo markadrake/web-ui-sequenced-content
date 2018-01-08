@@ -43,11 +43,6 @@ class DynamicType {
 
 	loop() {
 		this.log(`loop() called`);
-
-		// window.setTimeout(() => {
-		// 	this.loop();
-		// }, this.config.timeForPause);
-
 		this.deleteText();
 	}
 

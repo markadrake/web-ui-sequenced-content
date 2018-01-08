@@ -26,6 +26,8 @@ So try adding a large, personable content block!
 
 - For production you may want to consider pausing the entire loop until the content block is scrolled into view. Then add a delay, giving the user some time to scan the content prior to starting the loop.
 
+- I really wanted to use promises here to tighten up the code and make it look pretty.
+
 # About the Author
 
 Hi I'm **Mark Drake**!
