@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"watch": "",
-		"sass": "node-sass ./ --output ./ --output-style compressed",
-		"sass-watch": "node-sass ./ --output ./ --output-style compressed -w",
+		"sass": "node-sass ./src --output ./src --output-style compressed",
+		"sass-watch": "node-sass ./src --output ./src --output-style compressed -w",
 		"js": "babel src --out-dir src",
 		"js-watch": "babel src --out-dir src --watch"
 	},
