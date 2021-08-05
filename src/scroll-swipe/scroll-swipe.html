@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/scroll-swipe.css">
+</head>
+<body>
+	<div data-scroll-swipe>
+		<canvas></canvas>
+		<section>
+			<figure><img src="media/gratisography-outlook-1170x780.webp"></figure>
+		</section>
+		<section data-scroll-swipe-direction="left">
+			<figure><img src="media/gratisography-bunny-man-cash-1170x780.webp"></figure>
+		</section>
+	</div>
+	<script src="scripts/scroll-swipe.js"></script>
+	<script>
+		(function(){
+			new ScrollSwipe();
+		})();
+	</script>
+</body>
+</html>
