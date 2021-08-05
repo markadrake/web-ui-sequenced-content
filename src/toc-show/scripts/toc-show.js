@@ -44,6 +44,7 @@ var ToCShow = function () {
 		value: function init() {
 			var _this = this;
 
+			this.checkAndCorrectAccessibility();
 			window.addEventListener("resize", this.windowResizeHandler.bind(this));
 
 			this.links.forEach(function (link, linkIndex) {
@@ -76,6 +77,8 @@ var ToCShow = function () {
 			});
 
 			this.stage.style.left = this.currentIndex * -100 + "%";
+
+			this.checkAndCorrectAccessibility();
 		}
 	}, {
 		key: "moveTheBookmark",
@@ -93,6 +96,25 @@ var ToCShow = function () {
 		value: function windowResizeHandler() {
 			this.elementBounds = this.element.getBoundingClientRect();
 			this.toggleScene(this.currentIndex);
+		}
+	}, {
+		key: "checkAndCorrectAccessibility",
+		value: function checkAndCorrectAccessibility() {
+			var _this2 = this;
+
+			this.stages.forEach(function (stage, stageIndex) {
+				if (stageIndex !== _this2.currentIndex) {
+					stage.ariaHidden = true;
+					stage.querySelectorAll("a, button").forEach(function (el) {
+						el.tabIndex = -1;
+					});
+				} else {
+					stage.ariaHidden = false;
+					stage.querySelectorAll("a, button").forEach(function (el) {
+						el.tabIndex = null;
+					});
+				}
+			});
 		}
 	}]);
 

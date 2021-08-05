@@ -30,6 +30,7 @@ class ToCShow {
 	}
 
 	init() {
+		this.checkAndCorrectAccessibility();
 		window.addEventListener("resize", this.windowResizeHandler.bind(this));
 
 		this.links.forEach((link, linkIndex) => {
@@ -68,6 +69,8 @@ class ToCShow {
 		});
 
 		this.stage.style.left = this.currentIndex * -100 + "%";
+
+		this.checkAndCorrectAccessibility();
 	}
 
 	moveTheBookmark() {
@@ -83,6 +86,22 @@ class ToCShow {
 	windowResizeHandler() {
 		this.elementBounds = this.element.getBoundingClientRect();
 		this.toggleScene(this.currentIndex);
+	}
+
+	checkAndCorrectAccessibility() {
+		this.stages.forEach((stage, stageIndex) => {
+			if (stageIndex !== this.currentIndex) {
+				stage.ariaHidden = true;
+				stage.querySelectorAll("a, button").forEach(el => {
+					el.tabIndex = -1;
+				});
+			} else {
+				stage.ariaHidden = false;
+				stage.querySelectorAll("a, button").forEach(el => {
+					el.tabIndex = null;
+				});
+			}
+		});
 	}
 
 }

@@ -8,7 +8,8 @@
 		"sass": "node-sass ./src --output ./src --output-style compressed",
 		"sass-watch": "node-sass ./src --output ./src --output-style compressed -w",
 		"js": "babel src --out-dir src",
-		"js-watch": "babel src --out-dir src --watch"
+		"js-watch": "babel src --out-dir src --watch",
+		"serve": "http-server ./src"
 	},
 	"repository": {
 		"type": "git",
