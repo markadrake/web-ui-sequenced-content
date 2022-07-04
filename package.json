@@ -22,7 +22,7 @@
 	"homepage": "https://github.com/markadrake/web-ui-sequenced-content#readme",
 	"dependencies": {
 		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"node-sass": "^4.7.2"
+		"babel-preset-env": "^1.7.0",
+		"node-sass": "^7.0.1"
 	}
 }
